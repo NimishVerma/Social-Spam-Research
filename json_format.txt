@@ -1,4 +1,4 @@
-jsonx = {"_id": id, "user": user, "user_id": user_id, "content": content, "timestamp": timestamp, "location": location, "hashtags":hashtags, "Retweet": RT, "Fav": fav, 'source': source}
+jsonx = {"_id": id, "user": user, "user_id": user_id, "content": content, "timestamp": timestamp, "location": location, "hashtags":hashtags, "Retweet": RT, "Fav": fav, 'source': source, 'date_added': date_added}
 
 Desc:
 ----------------------------------------------------------------------------------------
