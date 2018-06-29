@@ -1,13 +1,33 @@
-jsonx = {"_id": id, "user": user, "user_id": user_id, "content": content, "timestamp": timestamp, "location": location, "hashtags":hashtags, "Retweet": RT, "Fav": fav, 'source': source, 'date_added': date_added}
+jsonx = {"_id": id, 'keyword': keyword, "username": username, "user_id": user_id, "content": content, "timestamp": timestamp, "location": location, "hashtags":hashtags, "Retweet": RT, "Fav": fav, 'source': source, 'date_added': date_added, 'in_reply_to': in_reply_to}
+
 
 Desc:
 ----------------------------------------------------------------------------------------
+
 RT is True or false depending upon whether the tweet is a retweet or not. For other APIs, this may be something such as "shared". Although store it in json in retweet.
 
+keyword: the query (from keywords.txt that was used to retreive the post)
 
-source: specifies the source api, eg: twitter, youtube, g+, fb etc.
+source: specifies the source api, eg: twitter, youtube, g+, fb etc. This is always hard-coded.
 
 content: specifies the text in the tweet/comment captured
 
-hashtags: understood. Try to write a script to identify hashtags in text. If found, separate them and add them to this section. Otherwise, this may be empty.
+hashtags: understood. Try to write a script to identify hashtags in text. If found, separate them and add them to this section. Otherwise, this may be empty. The hashtags should be present as a list of strings.
 
+_id: id of the post on that specific platform
+
+user_id = id of the user on that specific platform
+
+timestamp: time of creation of post. Use format .strftime('%d %b %Y')
+
+in_reply_to: (hard code this to -1 if your API does not support this) useful for identifying campaigns
+
+fav: favorite/like count
+
+date_added: date we collected the tweet into our DB. Use strftime('%d %b %Y') format.
+
+
+
+
+##### AVOID DUPLICATES AND CHECK FOR THEM EXPLICITLY BEFORE ADDING ANY DATA TO THE DB. EACH OBJECT MUST BE DISTINCT.
+##### THE JSON FORMAT MAKES IT DISTINCT EVEN IF THE POST IS A REPOST.
