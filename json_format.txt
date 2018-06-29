@@ -1,0 +1,13 @@
+jsonx = {"_id": id, "user": user, "user_id": user_id, "content": content, "timestamp": timestamp, "location": location, "hashtags":hashtags, "Retweet": RT, "Fav": fav, 'source': source}
+
+Desc:
+----------------------------------------------------------------------------------------
+RT is True or false depending upon whether the tweet is a retweet or not. For other APIs, this may be something such as "shared". Although store it in json in retweet.
+
+
+source: specifies the source api, eg: twitter, youtube, g+, fb etc.
+
+content: specifies the text in the tweet/comment captured
+
+hashtags: understood. Try to write a script to identify hashtags in text. If found, separate them and add them to this section. Otherwise, this may be empty.
+
