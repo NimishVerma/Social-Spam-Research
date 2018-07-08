@@ -10,6 +10,7 @@ Acceptance
 Access
 Accordingly
 Act Now
+Whatsapp
 Action
 Ad
 Additional income
@@ -47,8 +48,14 @@ Buying judgments
 Cable converter
 Call
 Call free
+Call me
+Call us
 Call now
-Calling creditors
+call
+call free
+call me
+call us
+call now
 Cancel
 Cancel at any time
 Cannot be combined with any other offer
@@ -116,6 +123,8 @@ Extra
 Extra cash
 Extra income
 F r e e
+Fuck buddies
+find and fuck
 Fantastic
 Fantastic deal
 Fast cash
@@ -265,22 +274,14 @@ No purchase necessary
 No questions asked
 No selling
 No strings attached
-No-obligation
-Not intended
 Not junk
 Not spam
-Now
-Now only
-Obligation
-Offshore
 Offer
 Offer expires
 Once in lifetime
 One hundred percent free
 One hundred percent guaranteed
 One time
-One time mailing
-Online biz opportunity
 Online degree
 Online marketing
 Online pharmacy
@@ -318,8 +319,6 @@ Real thing
 Refinance
 Refinance home
 Refund
-Removal
-Removal instructions
 Remove
 Removes wrinkles
 Request
@@ -355,7 +354,6 @@ Stainless steel
 Stock alert
 Stock disclaimer statement
 Stock pick
-Stop
 Stop snoring
 Strong buy
 Stuff on sale
@@ -366,10 +364,7 @@ Success
 Supplies
 Supplies are limited
 Take action
-Take action now
-Talks about hidden charges
 Talks about prizes
-Teen
 Tells you it’s an ad
 Terms
 Terms and conditions
@@ -407,23 +402,18 @@ Weekend getaway
 Weight
 Weight loss
 What are you waiting for?
-Whatsapp
 What’s keeping you?
 While supplies last
 While you sleep
-Who really wins?
 Why pay more?
-Wife
 Will not believe your eyes
 Win
 Winner
 Winning
-Won
 Work from home
 Xanax
 You are a winner!
 You have been selected
-Your income
 SMS
 text
 txt
