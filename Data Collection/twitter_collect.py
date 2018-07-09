@@ -115,8 +115,7 @@ for i, keyword in enumerate(file):
         res = tweepy.Cursor(api.search, q=query, count=max_items, lang="en", tweet_mode="extended").items(max_items)
         """
         for tweet in res:
-            __ = _
-        """
+            __ = _"""
     except:
         print(f"###############  NOTE: KEY EXPIRED. MOVING TO NEXT KEY: {f+1}")
         f += 1
