@@ -17,16 +17,20 @@ coll = db.posts
 
 client = pytumblr.TumblrRestClient('V3d6XXDyA2Mhet8YGcnBEP6FwJ7EZEhb8xYD5t1IjDnW3ivDaO')
 
+dups = 0
+inserted = 0
+
 def search(keyword):
+    global dups, inserted
     for i in range(5):
-        date = datetime.datetime.today()-timedelta(days=i)
+        date = datetime.datetime.today()-timedelta(weeks=2*i)
         date = date.strftime("%s")
-        print("searching for keyword " +keyword +  " date before " + date)
+        print("searching for keyword " +keyword + " date before " + date)
         try:
             a = client.tagged(keyword,before=date)
         except:
             print("oops ran into an error")
-            return 
+            return
 
         for ax in a:
 
@@ -49,20 +53,24 @@ def search(keyword):
             source = 'tumblr'
             date_added = ax['date'][:10]
             in_reply_to = -1
-            timestamp = ax['timestamp']
+            timestamp = datetime.datetime.fromtimestamp(ax['timestamp']).strftime('%d %b %Y')
             obj = {}
             jsonx = {"_id": post_id, 'keyword': keyword, "username": user, "user_id": -1, "content": text, "timestamp": timestamp,
                          "location": location, "hashtags": hashtags, "Retweet": RT, "Fav": fav, 'source': source,
-                         'date_added': date_added, 'in_reply_to': in_reply_to}    
+                         'date_added': date_added, 'in_reply_to': in_reply_to}
+
             # print(jsonx)
             try:
                 coll.insert(jsonx)  # and insert
+                inserted += 1
                 # count_ins += 1
             except pymongo.errors.DuplicateKeyError:  # Except if it's already there
                 # count_dup += 1
+                dups += 1
                 print("Duplicate Key")
             print(keyword + ":  \ntimestamp: " +'\n' + text )
             print("###########################" )
+
 file = open('../keywords.txt', 'r')
 print("opened")
 num_lines = 0
@@ -74,9 +82,10 @@ print(num_lines)
 file = open('../keywords.txt', 'r')
 
 for keyword in file:
+
     keyword = keyword.rstrip()
     print(keyword)
     if not keyword: continue
     query = keyword
-    search(query)   
-
+    search(query)
+print(f"######Inserted: {inserted}, Duplicates Discarded: {dups} #######")

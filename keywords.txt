@@ -1,3 +1,4 @@
+call me
 100%
 #1
 message
@@ -11,7 +12,8 @@ Access
 Accordingly
 Act Now
 Whatsapp
-Action
+Reach us
+Hit me up
 Ad
 Additional income
 Addresses on CD
