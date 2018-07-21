@@ -21,7 +21,7 @@ print("Collecting " + str(max_items) + " tweets for each keyword.")
 consumer_keys = ["xpisyVgkTPrFUANmPaSdJgUat", "p6tGekq0M3dPEkEWWxiv4DcmH",
                  "u1WuzPHnrPITdITTVsAGrtGxA", "GSskR2nEtbAswvJ3TgCWFsYhx",
                  "MgmMKmSN89nJEDPjZvvrQsILb", "XdVMFQcRGlTdTTuf4KIl3QZXf",
-                 "6lBwFbPfNRzCI3Pj2tMBvGN7t", "hG8X0ltdRMYdYa4Q6SBq1wdAG",
+                 "6lB`wFbPfNRzCI3Pj2tMBvGN7t", "hG8X0ltdRMYdYa4Q6SBq1wdAG",
                  "zLRd2nMg7DxkS3vKCvnwisZ98", "X7Q9z2pUQEmZ8sZDDUQM7UT1w",
                  "LVRTOlxxRw3gTV9qfoLZG1JPZ", "JOxYuusSGH0YtiWcPZvWhvQ1Q",
                  "Obrv9MJkKlH09clnylxBvQ3lg", "IXmZacmxG2zhQhMxGlmI4wTNH",
