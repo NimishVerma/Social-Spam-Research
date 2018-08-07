@@ -46,7 +46,11 @@ def search(keyword):
                     # print(text
                     print("???????????????????????????????? ")
                 except:
+<<<<<<< HEAD
                     print(("couldnt parse the post"))
+=======
+                    print("Couldnt parse the dict")
+>>>>>>> aff7185fbb0ca617c40d478c1d5fff6aa09a0c5e
                     continue
             user = ax['blog_name']
             location = -1
