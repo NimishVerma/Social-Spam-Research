@@ -1,9 +1,7 @@
 import sys
 f = 0
 def to_run(inp1,inp2):
-    #coding: utf-8
-
-    # In[3]:
+    
     import requests
 
     API_KEYS = ['3ecafd97694e35054e50cae6316861e1',
