@@ -11,7 +11,7 @@ ACCESS_TOKEN_URL = 'http://www.tumblr.com/oauth/access_token'
 CONSUMER_KEY = 'V3d6XXDyA2Mhet8YGcnBEP6FwJ7EZEhb8xYD5t1IjDnW3ivDaO'
 CONSUMER_SECRET = 'DkfPLb5pYNdRcdEjSpLz6iLzZR46VRArFB06rCEyLwGNBKnlYh'
 
-client = pymongo.MongoClient()
+client = pymongo.MongoClient('mongodb://user:password@localhost:27017/')
 db = client.social_data
 coll = db.posts
 
@@ -46,11 +46,10 @@ def search(keyword):
                     # print(text
                     print("???????????????????????????????? ")
                 except:
-<<<<<<< HEAD
-                    print(("couldnt parse the post"))
-=======
+
+
                     print("Couldnt parse the dict")
->>>>>>> aff7185fbb0ca617c40d478c1d5fff6aa09a0c5e
+
                     continue
             user = ax['blog_name']
             location = -1

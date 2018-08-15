@@ -104,7 +104,7 @@ for i, keyword in enumerate(file):
 
     api = tweepy.API(auth, wait_on_rate_limit=False)
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient('mongodb://user:password@localhost:27017/')
     db = client.social_data
     coll = db.posts
 
