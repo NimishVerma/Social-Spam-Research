@@ -1,0 +1,57 @@
+[{
+		"user": "3325130122",
+		"categories": [
+			"Contact Us",
+			"Legal",
+			"Other"
+		],
+		"count": 2154
+	},
+	{
+		"user": "78661839",
+		"categories": [
+			"Appointment",
+			"Banking",
+			"Contact Us",
+			"Give Away",
+			"Selling"
+		],
+		"count": 1379
+
+	},
+	{
+		"user": "46528834@N05",
+		"categories": [
+			"Appointment",
+			"Banking",
+			"Contact Us",
+			"Other",
+			"Politics",
+			"Selling",
+			"Social Media Promotion"
+		],
+		"count": 1035
+
+	},
+	{
+		"user": "4148799826",
+		"categories": [
+			"Appointment",
+			"Contact Us",
+			"Give Away",
+			"Other",
+			"Selling"
+		],
+		"count": 646
+
+	},
+	{
+		"user": "2208888664",
+		"categories": [
+			"Contact Us",
+			"Selling"
+		],
+		"count": 521
+
+	}
+]

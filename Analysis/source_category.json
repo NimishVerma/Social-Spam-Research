@@ -1,0 +1,26 @@
+[{
+		"source": "flickr",
+		"category": {
+			"Banking": 4.16,
+			"Give Away": 2.84,
+			"Selling": 3.67
+		}
+	},
+	{
+		"source": "tumblr",
+		"category": {
+			"Banking": 12.4,
+			"Contact Us": 14.4,
+
+			"Selling": 26.86
+		}
+	},
+	{
+		"source": "twitter",
+		"category": {
+			"Banking": 5.47,
+			"Contact Us": 47.97,
+			"Selling": 14.21
+		}
+	}
+]
